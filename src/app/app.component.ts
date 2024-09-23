@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnInit, OnDestroy {
 
   title = 'scoreboard-template';
 
@@ -24,6 +24,8 @@ export class AppComponent implements AfterViewInit {
 
   public scoreBoardFloat: boolean = false;
 
+  private intervalId: any;
+
   horseList = [
     { id: 'horse1', name: 'Janette Hudson', role: 'UI/UX Designer', icon: 'assets/img/icon_01.png', score: 0 },
     { id: 'horse2', name: 'Theresa Webb Hudson', role: 'UI/UX Designer', icon: 'assets/img/icon_02.png', score: 0 },
@@ -36,6 +38,14 @@ export class AppComponent implements AfterViewInit {
   ];
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
+
+  ngOnInit(): void {
+    this.intervalId = setInterval(() => this.toogleFloat(), 30000);
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.intervalId);
+  }
 
   ngAfterViewInit(): void {
 

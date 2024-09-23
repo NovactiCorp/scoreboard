@@ -134,18 +134,18 @@
     <div class="flex flex-column flex-auto">
       <div class="border-2 border-dashed surface-border border-round surface-section flex-auto lg:ml-5">
         <div class="grid surface-200" id="myDiv">
-          <div class="col-8"  [ngClass]="scoreBoardFloat == true ? 'lg:col-12' : ''">
+          <div class="col-8" [ngClass]="scoreBoardFloat == true ? 'lg:col-12' : ''">
             <div class="card h-full p-4 surface-border border-round surface-section">
               <div class="flex align-items-start justify-content-between mb-6"><span
                   class="text-900 text-xl font-semibold">Sales of The Month</span>
                 <div>
                   <!-- <button pButton pRipple [icon]="scoreBoardFloat == true ? 'pi pi-user-minus' : 'pi pi-user-plus'" (click)="toogleFloat()"
                     class="p-button-text p-button-plain p-button-rounded"></button> -->
-                    <button pButton pRipple icon="pi pi-dollar" (click)="scoreBoardFloat = false"
-                    class="p-button-text p-button-plain p-button-rounded">Vehículos Nuevos</button>
-                    <button pButton pRipple icon="pi pi-dollar" (click)="scoreBoardFloat = true"
-                    class="p-button-text p-button-plain p-button-rounded">Mayorista</button>
-                    
+                  <button pButton pRipple icon="pi pi-dollar" (click)="scoreBoardFloat = false"
+                    class="p-button-text p-button-plain p-button-rounded" [ngClass]="scoreBoardFloat == true ? '':'text-primary'">Vehículos Nuevos</button>
+                  <button pButton pRipple icon="pi pi-dollar" (click)="scoreBoardFloat = true"
+                    class="p-button-text p-button-plain p-button-rounded" [ngClass]="scoreBoardFloat == true ? 'text-primary':''">Mayorista</button>
+
 
                   <button pButton pRipple icon="pi pi-window-maximize" (click)="windowMaximize()"
                     class="p-button-text p-button-plain p-button-rounded"></button>
@@ -163,20 +163,39 @@
                 </div> -->
                 <div class="bg_race"
                   style="flex: 0 0 auto; height: 69.6%; margin-top: -16px; background-image: url('assets/img/bg_race_03.png'); background-size: 100% 100%; background-position: center; background-repeat: repeat-x;z-index: 3;">
-                  <div class="horses" style="position: relative; display: flex; width: 100%; height: 100%; justify-content: flex-start; align-items: center; z-index: 4;">
-                    <div class="responsive responsive2" style="background-image: url('assets/img/horse_09.png'); position: absolute; left: 0; top: 20px;transition: left 2s ease, top 2s ease;"></div>
+                  <div class="horses"
+                    style="position: relative; display: flex; width: 100%; height: 100%; justify-content: flex-start; align-items: center; z-index: 4;">
+                    <div class="responsive responsive2"
+                      style="background-image: url('assets/img/horse_09.png'); position: absolute; left: 0; top: 20px;transition: left 2s ease, top 2s ease;">
+                    </div>
 
-                    <div class="responsive responsive2 horse" id="horse1" style="background-image: url('assets/img/horse_01.png'); position: absolute; left: 0; top: 20px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse2" style="background-image: url('assets/img/horse_02.png'); position: absolute; left: 0; top: 30px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse3" style="background-image: url('assets/img/horse_03.png'); position: absolute; left: 0; top: 40px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse4" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_04.png)'" style="position: absolute; left: 0; top: 50px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse5" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_05.png)'" style="position: absolute; left: 0; top: 60px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse6" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_06.png)'" style="position: absolute; left: 0; top: 70px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse7" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_07.png)'" style="position: absolute; left: 0; top: 80px;transition: left 2s ease, top 2s ease;"></div>
-                    <div class="responsive responsive2 horse" id="horse8" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_08.png)'" style="position: absolute; left: 0; top: 90px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse1"
+                      style="background-image: url('assets/img/horse_01.png'); position: absolute; left: 0; top: 20px;transition: left 2s ease, top 2s ease;">
+                    </div>
+                    <div class="responsive responsive2 horse" id="horse2"
+                      style="background-image: url('assets/img/horse_02.png'); position: absolute; left: 0; top: 30px;transition: left 2s ease, top 2s ease;">
+                    </div>
+                    <div class="responsive responsive2 horse" id="horse3"
+                      style="background-image: url('assets/img/horse_03.png'); position: absolute; left: 0; top: 40px;transition: left 2s ease, top 2s ease;">
+                    </div>
+                    <div class="responsive responsive2 horse" id="horse4"
+                      [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_04.png)'"
+                      style="position: absolute; left: 0; top: 50px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse5"
+                      [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_05.png)'"
+                      style="position: absolute; left: 0; top: 60px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse6"
+                      [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_06.png)'"
+                      style="position: absolute; left: 0; top: 70px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse7"
+                      [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_07.png)'"
+                      style="position: absolute; left: 0; top: 80px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse8"
+                      [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_08.png)'"
+                      style="position: absolute; left: 0; top: 90px;transition: left 2s ease, top 2s ease;"></div>
 
                     <!-- Agrega más caballos según sea necesario -->
-                </div>
+                  </div>
                   <!-- <div class="horses"
                     style="display: flex; width: 100%; height: 100%; justify-content: space-around; align-items: center;z-index: 4;">
 
@@ -205,7 +224,8 @@
           </div>
           <!-- <div class="col-4 lg:col-4" [ngClass]="{'leaderboard-float': scoreBoardFloat === true}">-->
           <div [ngClass]="scoreBoardFloat == true ? 'leaderboard-float' : 'col-4 lg:col-4'">
-            <div class="surface-card shadow-2 border-round p-4" id="leaderboard" [style]="scoreBoardFloat == true ? 'background-color:#D3D3D3ba !important;':''">
+            <div class="surface-card shadow-2 border-round p-4" id="leaderboard"
+              [style]="scoreBoardFloat == true ? 'background-color:#D3D3D3ba !important;':''">
               <div class="flex justify-content-between align-items-center mb-5"> <span
                   class="text-xl text-900 font-medium">Leaderboard</span>
                 <div>
@@ -213,7 +233,8 @@
                 </div>
               </div>
               <ul class="list-none p-0 m-0">
-                <li *ngFor="let horse of horseList;" [style]="scoreBoardFloat == true && horse.id==='horse4' || scoreBoardFloat == true && horse.id==='horse5' || scoreBoardFloat == true && horse.id==='horse6' || scoreBoardFloat == true && horse.id==='horse7' || scoreBoardFloat == true && horse.id==='horse8' ? 'display:none !important':''"
+                <li *ngFor="let horse of horseList;"
+                  [style]="scoreBoardFloat == true && horse.id==='horse4' || scoreBoardFloat == true && horse.id==='horse5' || scoreBoardFloat == true && horse.id==='horse6' || scoreBoardFloat == true && horse.id==='horse7' || scoreBoardFloat == true && horse.id==='horse8' ? 'display:none !important':''"
                   class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                   <div class="flex">
                     <img [src]="horse.icon" class="mr-3" style="width: 45px; height: 45px" />
@@ -225,6 +246,20 @@
                   <div class="mt-2 md:mt-0 flex flex-nowrap">
                     <button pButton pRipple class="p-button-text p-button-plain p-button-rounded mr-1 text-900"
                       icon="pi pi-car"> - {{ horse.score }}</button>
+                  </div>
+                </li>
+                <li
+                  class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                  <div class="flex">
+                    <img src="assets/img/icon_09.png" class="mr-3" style="width: 45px; height: 45px" />
+                    <div class="mr-0 md:mr-8">
+                      <span class="block text-900 font-medium mb-1">Jake Crawford</span>
+                      <div class="text-600">UI/UX Designer</div>
+                    </div>
+                  </div>
+                  <div class="mt-2 md:mt-0 flex flex-nowrap">
+                    <button pButton pRipple class="p-button-text p-button-plain p-button-rounded mr-1 text-900"
+                      icon="pi pi-car"> - 0</button>
                   </div>
                 </li>
               </ul>
