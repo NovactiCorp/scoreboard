@@ -1,0 +1,237 @@
+<div class="min-h-screen flex flex-column surface-ground">
+  <div class="surface-overlay py-3 px-6 flex align-items-center justify-content-between relative lg:static"> <a pRipple
+      class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700"
+      pStyleClass="#app-sidebar-12" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden"
+      leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true"> <i class="pi pi-bars text-4xl"></i> </a>
+    <img src="https://blocks.primeng.org/assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40"
+      class="mr-0 lg:mr-6"> <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next"
+      enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true"> <i class="pi pi-ellipsis-v text-2xl"></i>
+    </a>
+    <ul
+      class="list-none p-3 lg:p-0 m-0 lg:align-items-center select-none flex-column lg:flex-row absolute hidden lg:flex lg:static surface-overlay right-0 top-100 z-1 shadow-2 lg:shadow-none">
+      <li class="lg:mr-1"> <a pRipple
+          class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 lg:border-circle">
+          <i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i> <span
+            class="block lg:hidden font-medium">Inbox</span> </a> </li>
+      <li class="lg:mr-1"> <a pRipple
+          class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 lg:border-circle">
+          <i class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0" pBadge severity="danger"></i> <span
+            class="block lg:hidden font-medium">Notifications</span> </a> </li>
+      <li class="border-top-1 surface-border lg:border-top-none lg:mt-0 mt-2 lg:pt-0 pt-2"> <a pRipple
+          class="flex p-3 align-items-center hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 lg:border-circle">
+          <img src="https://blocks.primeng.org/assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0"
+            style="width: 25px; height: 25px" />
+          <div class="block lg:hidden">
+            <div class="text-900 font-medium">Josephine Lillard</div> <span
+              class="text-600 font-medium text-sm">Marketing Specialist</span>
+          </div>
+        </a> </li>
+    </ul>
+  </div>
+  <ul
+    class="list-none py-3 px-5 m-0 surface-section flex align-items-center font-medium overflow-x-auto border-top-1 border-bottom-1 surface-border">
+    <li class="pr-3"> <a class="cursor-pointer"> <i class="pi pi-home text-600"></i> </a> </li>
+    <li class="px-2"> <i class="pi pi-angle-right text-600"></i> </li>
+    <li class="px-2"> <a class="cursor-pointer text-600 white-space-nowrap">Favorites</a> </li>
+    <li class="px-2"> <i class="pi pi-angle-right text-600"></i> </li>
+    <li class="px-2"> <a class="cursor-pointer text-purple-500 white-space-nowrap">Dashboard</a> </li>
+  </ul>
+  <div class="flex relative lg:static p-5 flex-auto">
+    <div id="app-sidebar-12"
+      class="surface-card hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none shadow-2"
+      style="width:280px;border-radius: 12px">
+      <div class="flex flex-column h-full">
+        <div class="overflow-y-auto">
+          <div class="p-3">
+            <div class="p-input-icon-left w-full"> <i class="pi pi-search"></i> <input type="text" pInputText
+                class="border-1 surface-border w-full" placeholder="Search" style="border-radius: 30px"> </div>
+          </div>
+          <ul class="list-none px-3 pb-3 pt-0 m-0">
+            <li>
+              <div class="p-3 flex align-items-center justify-content-between text-600"> <span
+                  class="font-medium text-sm text-900">FAVORITES</span> </div>
+              <ul class="list-none p-0 m-0 overflow-hidden">
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 bg-purple-50 transition-duration-150 transition-colors text-purple-500 border-purple-500 border-right-2">
+                    <i class="pi pi-home mr-2"></i> <span class="font-medium">Dashboard</span>
+                  </a> </li>
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                    <i class="pi pi-bookmark mr-2"></i> <span class="font-medium">Bookmarks</span>
+                  </a> </li>
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent"
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden"
+                    leaveActiveClass="slideup"> <i class="pi pi-chart-line mr-2"></i> <span
+                      class="font-medium">Reports</span>
+                    <i class="pi pi-chevron-down ml-auto"></i> </a>
+                  <ul
+                    class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
+                    <li> <a pRipple
+                        class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent"
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden"
+                        leaveActiveClass="slideup"> <i class="pi pi-chart-line mr-2"></i> <span
+                          class="font-medium">Revenue</span> <i class="pi pi-chevron-down ml-auto"></i> </a>
+                      <ul
+                        class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <li> <a pRipple
+                            class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                            <i class="pi pi-table mr-2"></i> <span class="font-medium">View</span> </a> </li>
+                        <li> <a pRipple
+                            class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                            <i class="pi pi-search mr-2"></i> <span class="font-medium">Search</span> </a> </li>
+                      </ul>
+                    </li>
+                    <li> <a pRipple
+                        class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                        <i class="pi pi-chart-line mr-2"></i> <span class="font-medium">Expenses</span> </a> </li>
+                  </ul>
+                </li>
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                    <i class="pi pi-users mr-2"></i> <span class="font-medium">Team</span>
+                  </a> </li>
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                    <i class="pi pi-comments mr-2"></i> <span class="font-medium">Messages</span>
+                    <span
+                      class="inline-flex align-items-center justify-content-center ml-auto bg-purple-500 text-0 border-circle"
+                      style="min-width: 1.5rem; height: 1.5rem">3</span> </a> </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-none p-3 m-0">
+            <li>
+              <div class="p-3 flex align-items-center justify-content-between text-600"> <span
+                  class="font-medium text-sm text-900">APPLICATION</span> </div>
+              <ul class="list-none p-0 m-0 overflow-hidden">
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                    <i class="pi pi-folder mr-2"></i> <span class="font-medium">Projects</span>
+                  </a> </li>
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                    <i class="pi pi-chart-bar mr-2"></i> <span class="font-medium">Performance</span> </a> </li>
+                <li> <a pRipple
+                    class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
+                    <i class="pi pi-cog mr-2"></i> <span class="font-medium">Settings</span>
+                  </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto border-top-1 surface-border p-3 flex justify-content-between"> <a pRipple
+            class="cursor-pointer inline-flex align-items-center justify-content-center border-2 surface-border hover:surface-100 text-600 transition-colors transition-duration-150 border-circle"
+            style="width:40px;height:40px"> <i class="pi pi-file text-xl"></i> </a> <a pRipple
+            class="cursor-pointer inline-flex align-items-center justify-content-center border-2 surface-border hover:surface-100 text-600 transition-colors transition-duration-150 border-circle"
+            style="width:40px;height:40px"> <i class="pi pi-star text-xl"></i> </a> <a pRipple
+            class="cursor-pointer inline-flex align-items-center justify-content-center border-2 surface-border hover:surface-100 text-600 transition-colors transition-duration-150 border-circle"
+            style="width:40px;height:40px"> <i class="pi pi-cog text-xl"></i> </a> <a pRipple
+            class="cursor-pointer inline-flex align-items-center justify-content-center bg-pink-500 text-white border-2 border-pink-600 hover:bg-pink-600 text-600 transition-colors transition-duration-150 border-circle"
+            style="width:40px;height:40px"> <i class="pi pi-sign-out text-xl"></i> </a> </div>
+      </div>
+    </div>
+    <div class="flex flex-column flex-auto">
+      <div class="border-2 border-dashed surface-border border-round surface-section flex-auto lg:ml-5">
+        <div class="grid surface-200" id="myDiv">
+          <div class="col-8"  [ngClass]="scoreBoardFloat == true ? 'lg:col-12' : ''">
+            <div class="card h-full p-4 surface-border border-round surface-section">
+              <div class="flex align-items-start justify-content-between mb-6"><span
+                  class="text-900 text-xl font-semibold">Sales of The Month</span>
+                <div>
+                  <!-- <button pButton pRipple [icon]="scoreBoardFloat == true ? 'pi pi-user-minus' : 'pi pi-user-plus'" (click)="toogleFloat()"
+                    class="p-button-text p-button-plain p-button-rounded"></button> -->
+                    <button pButton pRipple icon="pi pi-dollar" (click)="scoreBoardFloat = false"
+                    class="p-button-text p-button-plain p-button-rounded">Vehículos Nuevos</button>
+                    <button pButton pRipple icon="pi pi-dollar" (click)="scoreBoardFloat = true"
+                    class="p-button-text p-button-plain p-button-rounded">Mayorista</button>
+                    
+
+                  <button pButton pRipple icon="pi pi-window-maximize" (click)="windowMaximize()"
+                    class="p-button-text p-button-plain p-button-rounded"></button>
+                </div>
+              </div>
+              <div style="height: 500px; width: 100%; display: flex; flex-direction: column;" id="game">
+                <div class="sky"
+                  style="flex: 0 0 auto; height: 35%; background-image: url('assets/img/bg_sky_03.png'); background-size: 100% 100%; background-position: center; background-repeat: repeat-x;z-index: 1">
+                </div>
+                <div class="billboard"
+                  style="flex: 0 0 auto; height: 7.9%; margin-top: -13px; background-image: url('assets/img/bg_billboard_toyota.png'); background-size: 100% 100%; background-position: center; background-repeat: repeat-x;z-index: 2">
+                </div>
+                <!-- <div
+                  style="flex: 0 0 auto; height: 7.9%; margin-top: -13px; background-image: url('assets/img/bg_billboard_toyota.png'); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;z-index: 2">
+                </div> -->
+                <div class="bg_race"
+                  style="flex: 0 0 auto; height: 69.6%; margin-top: -16px; background-image: url('assets/img/bg_race_03.png'); background-size: 100% 100%; background-position: center; background-repeat: repeat-x;z-index: 3;">
+                  <div class="horses" style="position: relative; display: flex; width: 100%; height: 100%; justify-content: flex-start; align-items: center; z-index: 4;">
+                    <div class="responsive responsive2" style="background-image: url('assets/img/horse_09.png'); position: absolute; left: 0; top: 20px;transition: left 2s ease, top 2s ease;"></div>
+
+                    <div class="responsive responsive2 horse" id="horse1" style="background-image: url('assets/img/horse_01.png'); position: absolute; left: 0; top: 20px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse2" style="background-image: url('assets/img/horse_02.png'); position: absolute; left: 0; top: 30px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse3" style="background-image: url('assets/img/horse_03.png'); position: absolute; left: 0; top: 40px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse4" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_04.png)'" style="position: absolute; left: 0; top: 50px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse5" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_05.png)'" style="position: absolute; left: 0; top: 60px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse6" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_06.png)'" style="position: absolute; left: 0; top: 70px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse7" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_07.png)'" style="position: absolute; left: 0; top: 80px;transition: left 2s ease, top 2s ease;"></div>
+                    <div class="responsive responsive2 horse" id="horse8" [style]="scoreBoardFloat == true ? 'background-image: url(assets/img/none.png)' : 'background-image: url(assets/img/horse_08.png)'" style="position: absolute; left: 0; top: 90px;transition: left 2s ease, top 2s ease;"></div>
+
+                    <!-- Agrega más caballos según sea necesario -->
+                </div>
+                  <!-- <div class="horses"
+                    style="display: flex; width: 100%; height: 100%; justify-content: space-around; align-items: center;z-index: 4;">
+
+                    
+                    <div class="responsive responsive2 horse" id="horse1" style="background-image: url('assets/img/horse_01.png')"></div> 
+                    <div class="responsive responsive2 horse" id="horse2" style="background-image: url('assets/img/horse_02.png')"></div> 
+                    <div class="responsive responsive2 horse" id="horse3" style="background-image: url('assets/img/horse_03.png')"></div> 
+                    <div class="responsive responsive2 horse" id="horse4" style="background-image: url('assets/img/horse_04.png')"></div> 
+
+
+                  </div> -->
+                </div>
+              </div>
+              <!-- <div class="game-container">
+                <div class="bg_race"></div>
+                <div class="bg_billboard"></div>
+                <div class="bg_sky"></div>
+                <div class="horses">
+                  <div class="horse" id="horse1"></div>
+                  <div class="horse" id="horse2"></div>
+                  <div class="horse" id="horse3"></div>
+                  <div class="horse" id="horse4"></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- <div class="col-4 lg:col-4" [ngClass]="{'leaderboard-float': scoreBoardFloat === true}">-->
+          <div [ngClass]="scoreBoardFloat == true ? 'leaderboard-float' : 'col-4 lg:col-4'">
+            <div class="surface-card shadow-2 border-round p-4" id="leaderboard" [style]="scoreBoardFloat == true ? 'background-color:#D3D3D3ba !important;':''">
+              <div class="flex justify-content-between align-items-center mb-5"> <span
+                  class="text-xl text-900 font-medium">Leaderboard</span>
+                <div>
+                  <img src="assets/img/Toyota_Motor_North_America_logo_2019.png" class="mr-3" style="height: 45px" />
+                </div>
+              </div>
+              <ul class="list-none p-0 m-0">
+                <li *ngFor="let horse of horseList;" [style]="scoreBoardFloat == true && horse.id==='horse4' || scoreBoardFloat == true && horse.id==='horse5' || scoreBoardFloat == true && horse.id==='horse6' || scoreBoardFloat == true && horse.id==='horse7' || scoreBoardFloat == true && horse.id==='horse8' ? 'display:none !important':''"
+                  class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+                  <div class="flex">
+                    <img [src]="horse.icon" class="mr-3" style="width: 45px; height: 45px" />
+                    <div class="mr-0 md:mr-8">
+                      <span class="block text-900 font-medium mb-1">{{ horse.name }}</span>
+                      <div class="text-600">{{ horse.role }}</div>
+                    </div>
+                  </div>
+                  <div class="mt-2 md:mt-0 flex flex-nowrap">
+                    <button pButton pRipple class="p-button-text p-button-plain p-button-rounded mr-1 text-900"
+                      icon="pi pi-car"> - {{ horse.score }}</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
